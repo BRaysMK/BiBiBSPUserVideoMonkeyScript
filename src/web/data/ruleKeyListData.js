@@ -272,10 +272,66 @@ export default {
     getRuleKeyList,
     getPreciseVideoBV,
     /**
-     * 获取白名单视频tag(组合匹配)数组
+     * 获取白名单视频 tag(组合匹配) 数组
      * @return {[[]]}
      */
     getVideoTagCombinationWhite() {
         return GM_getValue("videoTag_combination_white", []);
+    },
+    /**
+     * 获取双重视频 tag(组合匹配) 数组
+     * @return {[[]]}
+     */
+    getVideoTagDoubleCombination() {
+        return GM_getValue("videoTag_doubleCombination", []);
+    },
+    /**
+     * 获取热搜项 (按标题标签匹配) 开关状态
+     * @return {boolean}
+     */
+    getHotSearchItemByTitleTag() {
+        return GM_getValue("hotSearchItemByTitleTag", false);
+    },
+    /**
+     * 获取热搜项 (关键词匹配) 数组
+     * @return {string[]}
+     */
+    getHotSearchItemArr() {
+        return GM_getValue("hotSearchItem", []);
+    },
+    /**
+     * 获取热搜项 (正则匹配) 数组
+     * @return {string[]}
+     */
+    getHotSearchItemCanonicalArr() {
+        return GM_getValue("hotSearchItemCanonical", []);
+    },
+    /**
+     * 获取 UP 主简介 (模糊匹配) 数组
+     * @return {string[]}
+     */
+    getUpSignArr() {
+        return GM_getValue("upSign", []);
+    },
+    /**
+     * 获取 UP 主简介 (正则匹配) 数组
+     * @return {string[]}
+     */
+    getUpSignCanonicalArr() {
+        return GM_getValue("upSignCanonical", []);
+    },
+    /**
+     * 获取置顶评论 (模糊匹配) 数组
+     * @return {string[]}
+     */
+    getTopCommentArr() {
+        return GM_getValue("topComment", []);
+    },
+    /**
+     * 获取置顶评论 (正则匹配) 数组
+     * @return {string[]}
+     */
+    getTopCommentCanonicalArr() {
+        return GM_getValue("topCommentCanonical", []);
     }
 }
