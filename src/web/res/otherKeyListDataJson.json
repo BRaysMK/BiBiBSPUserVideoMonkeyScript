@@ -31,5 +31,60 @@
     "isMinKey": "is_minimum_duration_gm",
     "minDefVal": 30,
     "maxDefVal": 3000
+  },
+  {
+    "title": "点赞率限制",
+    "minInputKey": "minimum_likes_rate_gm",
+    "maxInputKey": "maximum_likes_rate_gm",
+    "minLabel": "最小点赞率限制",
+    "maxLabel": "最大点赞率限制",
+    "isMaxKey": "is_maximum_likes_rate_gm",
+    "isMinKey": "is_minimum_likes_rate_gm",
+    "minDefVal": 0,
+    "maxDefVal": 100
+  },
+  {
+    "title": "投币率限制",
+    "minInputKey": "minimum_coin_rate_gm",
+    "maxInputKey": "maximum_coin_rate_gm",
+    "minLabel": "最小投币率限制",
+    "maxLabel": "最大投币率限制",
+    "isMaxKey": "is_maximum_coin_rate_gm",
+    "isMinKey": "is_minimum_coin_rate_gm",
+    "minDefVal": 0,
+    "maxDefVal": 100
+  },
+  {
+    "title": "收藏投币比限制",
+    "minInputKey": "minimum_favorite_coin_ratio_gm",
+    "maxInputKey": "maximum_favorite_coin_ratio_gm",
+    "minLabel": "最小收藏投币比限制",
+    "maxLabel": "最大收藏投币比限制",
+    "isMaxKey": "is_maximum_favorite_coin_ratio_gm",
+    "isMinKey": "is_minimum_favorite_coin_ratio_gm",
+    "minDefVal": 0,
+    "maxDefVal": 50
+  },
+  {
+    "title": "UP 主等级限制",
+    "minInputKey": "minimum_up_level_gm",
+    "maxInputKey": "maximum_up_level_gm",
+    "minLabel": "最小 UP 主等级限制",
+    "maxLabel": "最大 UP 主等级限制",
+    "isMaxKey": "is_maximum_up_level_gm",
+    "isMinKey": "is_minimum_up_level_gm",
+    "minDefVal": 0,
+    "maxDefVal": 6
+  },
+  {
+    "title": "UP 主粉丝数限制",
+    "minInputKey": "minimum_up_fans_gm",
+    "maxInputKey": "maximum_up_fans_gm",
+    "minLabel": "最小 UP 主粉丝数限制",
+    "maxLabel": "最大 UP 主粉丝数限制",
+    "isMaxKey": "is_maximum_up_fans_gm",
+    "isMinKey": "is_minimum_up_fans_gm",
+    "minDefVal": 0,
+    "maxDefVal": 10000000
   }
 ]

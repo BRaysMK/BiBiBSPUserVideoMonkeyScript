@@ -577,6 +577,76 @@ export const isDelLiveBottomBannerAdGm = () => {
     return GM_getValue('is_del_live_bottom_banner_ad_val_gm', true)
 }
 
+// 点赞率限制相关
+export const getMinimumLikesRateGm = () => {
+    return GM_getValue('minimum_likes_rate_gm', 0)
+}
+export const getMaximumLikesRateGm = () => {
+    return GM_getValue('maximum_likes_rate_gm', 100)
+}
+export const isMinimumLikesRateGm = () => {
+    return GM_getValue('is_minimum_likes_rate_gm', false)
+}
+export const isMaximumLikesRateGm = () => {
+    return GM_getValue('is_maximum_likes_rate_gm', false)
+}
+
+// 投币率限制相关
+export const getMinimumCoinRateGm = () => {
+    return GM_getValue('minimum_coin_rate_gm', 0)
+}
+export const getMaximumCoinRateGm = () => {
+    return GM_getValue('maximum_coin_rate_gm', 100)
+}
+export const isMinimumCoinRateGm = () => {
+    return GM_getValue('is_minimum_coin_rate_gm', false)
+}
+export const isMaximumCoinRateGm = () => {
+    return GM_getValue('is_maximum_coin_rate_gm', false)
+}
+
+// 收藏投币比限制相关
+export const getMinimumFavoriteCoinRatioGm = () => {
+    return GM_getValue('minimum_favorite_coin_ratio_gm', 0)
+}
+export const getMaximumFavoriteCoinRatioGm = () => {
+    return GM_getValue('maximum_favorite_coin_ratio_gm', 50)
+}
+export const isMinimumFavoriteCoinRatioGm = () => {
+    return GM_getValue('is_minimum_favorite_coin_ratio_gm', false)
+}
+export const isMaximumFavoriteCoinRatioGm = () => {
+    return GM_getValue('is_maximum_favorite_coin_ratio_gm', false)
+}
+
+// UP 主等级限制相关
+export const getMinimumUpLevelGm = () => {
+    return GM_getValue('minimum_up_level_gm', 0)
+}
+export const getMaximumUpLevelGm = () => {
+    return GM_getValue('maximum_up_level_gm', 6)
+}
+export const isMinimumUpLevelGm = () => {
+    return GM_getValue('is_minimum_up_level_gm', false)
+}
+export const isMaximumUpLevelGm = () => {
+    return GM_getValue('is_maximum_up_level_gm', false)
+}
+
+// UP 主粉丝数限制相关
+export const getMinimumUpFansGm = () => {
+    return GM_getValue('minimum_up_fans_gm', 0)
+}
+export const getMaximumUpFansGm = () => {
+    return GM_getValue('maximum_up_fans_gm', 10000000)
+}
+export const isMinimumUpFansGm = () => {
+    return GM_getValue('is_minimum_up_fans_gm', false)
+}
+export const isMaximumUpFansGm = () => {
+    return GM_getValue('is_maximum_up_fans_gm', false)
+}
+
 export default {
     getTripleRate,
     isTripleRateBlockingStatus,
@@ -630,5 +700,30 @@ export default {
     //是否显示回到顶部按钮
     isShowBackToTopBtn() {
         return GM_getValue('is_show_back_to_top_btn', false)
-    }
+    },
+    // 点赞率限制相关
+    getMinimumLikesRateGm,
+    getMaximumLikesRateGm,
+    isMinimumLikesRateGm,
+    isMaximumLikesRateGm,
+    // 投币率限制相关
+    getMinimumCoinRateGm,
+    getMaximumCoinRateGm,
+    isMinimumCoinRateGm,
+    isMaximumCoinRateGm,
+    // 收藏投币比限制相关
+    getMinimumFavoriteCoinRatioGm,
+    getMaximumFavoriteCoinRatioGm,
+    isMinimumFavoriteCoinRatioGm,
+    isMaximumFavoriteCoinRatioGm,
+    // UP 主等级限制相关
+    getMinimumUpLevelGm,
+    getMaximumUpLevelGm,
+    isMinimumUpLevelGm,
+    isMaximumUpLevelGm,
+    // UP 主粉丝数限制相关
+    getMinimumUpFansGm,
+    getMaximumUpFansGm,
+    isMinimumUpFansGm,
+    isMaximumUpFansGm
 }

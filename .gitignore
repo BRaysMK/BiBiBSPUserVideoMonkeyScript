@@ -1,8 +1,54 @@
-/.idea/
-/test/
-/node_modules/
-/dist/
-/lib/
-/patch/
+```
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+*.env.*
+
+# Logs
+*.log
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+.env
+
+# Build outputs
+dist/
+build/
+target/
+*.out
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Package manager
+package-lock.json
 yarn.lock
-pnpm-lock.yaml
+npm-debug.log*
+yarn-error.log*
+
+# Testing
+.mypy_cache/
+.pytest_cache/
+```
